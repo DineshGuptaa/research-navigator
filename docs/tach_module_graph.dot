@@ -1,0 +1,22 @@
+strict digraph {
+"crew.agents";
+models;
+config;
+main;
+routers;
+"crew.crew";
+"crew.tools";
+"crew.tasks";
+"crew.agents" -> models;
+"crew.agents" -> config;
+main -> routers;
+routers -> models;
+routers -> "crew.crew";
+"crew.crew" -> config;
+"crew.crew" -> "crew.tools";
+"crew.crew" -> models;
+"crew.crew" -> "crew.tasks";
+"crew.crew" -> "crew.agents";
+"crew.tools" -> config;
+"crew.tasks" -> models;
+}

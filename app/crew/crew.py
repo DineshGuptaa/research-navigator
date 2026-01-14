@@ -140,3 +140,9 @@ def get_crew(query_dict: dict) -> Crew:
     # Convert the dict back to ResearchQuery
     query = ResearchQuery(**query_dict)
     return get_research_crew(query)
+
+
+def run_crew() -> None:
+    query = input("Provide the Query: ")
+    research_query = ResearchQuery(query=query)
+    get_research_crew(research_query).kickoff()

@@ -2,7 +2,7 @@
 name = "research_navigator"
 version = "0.1.0"
 description = "Research-Navigator using crewAI"
-authors = [{ name = "Ranuga Gamage", email = "go2ranuga.com" }]
+authors = [{ name = "Ranuga Gamage", email = "go2ranuga@gmail.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
     "crewai[tools]>=0.108.0,<1.0.0",
@@ -17,11 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-research_navigator = "research_navigator.main:run"
-run_crew = "research_navigator.main:run"
-train = "research_navigator.main:train"
-replay = "research_navigator.main:replay"
-test = "research_navigator.main:test"
+run_crew = "app.crew.crew:run_crew"
 
 [build-system]
 requires = ["hatchling"]
